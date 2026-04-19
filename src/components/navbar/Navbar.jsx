@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Mobile menu toggle
 
   return (
-    <nav className="w-full bg-white sticky top-0 z-50 shadow-sm">
+    <nav className="w-full bg-white sticky top-0 z-50 mt-5">
       {/* Container to handle padding across screens */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between py-0">
         
