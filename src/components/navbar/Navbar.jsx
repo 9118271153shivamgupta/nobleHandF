@@ -14,13 +14,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between py-0">
         
         {/* Logo Section */}
-        <div className="flex items-center gap-2 shrink-0">
-          <div className="w-40 h-30 ">
-            <img src="/Logo.png" alt="Noblehand Logo" className="w-full h-full object-contain" />
+        <div className="flex items-center gap-0 shrink-0  ">
+          <div className="w-15 h-12 md:w-25 md:h-19     bg-green-900">
+            <img src="/Logo.png" alt="Noblehand Logo" className="w-full h-full object-fit" />
           </div>
           <div className="flex flex-col">
-            <span className="text-xl md:text-2xl font-bold text-green-900 leading-none">Noblehand</span>
-            <span className="text-[8px] md:text-[10px] text-gray-500 uppercase tracking-widest">Your Cleaning Partner</span>
+            <span className="text-xl md:text-3xl font-bold text-green-900 leading-none">Noblehand</span>
+            <span className="text-[8px] md:text-[10px] text-gray-500 uppercase tracking-widest px-2">Your Cleaning Partner</span>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center gap-15">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <Link to={link.path} className="text-gray-700 font-medium hover:text-green-700 transition-colors">
+              <Link to={link.path} className="text-gray-700 font-medium hover:text-green-900 transition-colors">
                 {link.name}
               </Link>
             </li>
